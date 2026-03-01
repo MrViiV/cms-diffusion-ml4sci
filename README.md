@@ -67,6 +67,31 @@ confirming that no single metric is sufficient for generative model evaluation i
 - **VAE Complexity Bias** — MSE loss causes regression to the mean; all 1000 generated samples are nearly identical centered blobs
 - **GAN Mode Collapse** — Mild collapse observed; GAN diversity (0.1557) close to real but morphology incorrect
 
+
+## Visual Results
+
+### Forward Noising Process (DDPM)
+![Noising](outputs/noise_test.png)
+
+### Training Curves — All Three Models
+![Training](outputs/all_training_curves.png)
+
+### Real vs Generated — Visual Comparison
+![Visual](outputs/visual_comparison_all.png)
+
+### Statistical Tests
+![Test1](outputs/test1_pixel_intensity.png)
+![Test3](outputs/test3_radial_profile.png)
+![Test5](outputs/test5_power_spectrum.png)
+
+### Model Comparison
+![Wasserstein](outputs/comparison_wasserstein.png)
+![Radial](outputs/comparison_radial.png)
+
+### Failure Mode Demonstration
+![Diversity](outputs/diversity_comparison.png)
+![Summary](outputs/test_summary.png)
+
 ## Requirements
 ```
 torch · numpy · h5py · scipy · matplotlib · tqdm · opencv-python
